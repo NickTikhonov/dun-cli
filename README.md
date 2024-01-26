@@ -1,6 +1,6 @@
 # dun
 
-Use AI to shave 10 seconds from your git workflow
+Replace "git add --all && git commit.." with a 1 second action powered by AI ✨
 
 ### Install
 
