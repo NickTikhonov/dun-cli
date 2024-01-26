@@ -1,6 +1,7 @@
 # dun
 
-Replace "git add --all && git commit.." with a 1 second action powered by AI ✨
+Zero friction git commit workflow powered GPT-3.5 ✨
+Simply type "dun" instead of  "git add --all && git commit -m ..."
 
 ### Install
 
