@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/NickTikhonov/dun-cli#readme",
   "dependencies": {
+    "openai": "^4.26.0",
     "ora": "^8.0.1",
     "simple-git": "^3.22.0"
   }
