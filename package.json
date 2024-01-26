@@ -1,6 +1,6 @@
 {
   "name": "dun-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Quick commits with ai",
   "main": "index.js",
   "bin": {
