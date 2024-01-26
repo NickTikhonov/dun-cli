@@ -13,5 +13,6 @@ source ~/.bashrc
 ### Use
 
 ```
-
+git:(main) dun
+✔ Committed: Update README.md with installation and usage instructions
 ```
