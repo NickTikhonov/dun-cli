@@ -1,33 +1,27 @@
 # dun
 
-Zero friction git commit workflow powered GPT-3.5 ✨
+Zero friction git commits powered GPT-3.5 ✨
 
-Before:
+Without `dun` 🤦‍♂️
 ```
-> git add --all
+> git add --all                   
 > git commit -m "Update README.md"
-On branch main
-Your branch is up to date with 'origin/main'.
-
-nothing to commit, working tree clean
+[main 91d1c76] Update README.md
+ 1 file changed, 15 insertions(+), 1 deletion(-)
 ```
 
+With `dun` 😍
 ```
-$> dun
+> dun
 ✔ Committed: Update README.md with installation and usage instructions
 ```
 
 ### Install
 
+You will need to provide your `OPENAI_API_KEY` as an environment variable.
+
 ```
 npm i --g dun-cli
 echo 'export OPENAI_API_KEY="<Your OPEN_AI Key>"' >> ~/.bashrc
 source ~/.bashrc
-```
-
-### Use
-
-```
-git:(main) dun
-✔ Committed: Update README.md with installation and usage instructions
 ```
