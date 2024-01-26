@@ -29,7 +29,6 @@ async function generateCommitMessage() {
     const diffStaged = await git().diff(['--staged', '--', ':!package-lock.json'])
     const combined = `${diff}\n${diffStaged}`
     const commitMessage = await gpt(systemPrompt, combined);
-    console.log(combined)
     return commitMessage;
 }
 
