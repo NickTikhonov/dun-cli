@@ -6,7 +6,7 @@ Simply type "dun" instead of  "git add --all && git commit -m ..."
 ### Install
 
 ```
-npm i --save dun
+npm i --g dun-cli
 echo 'export OPENAI_API_KEY="<Your OPEN_AI Key>"' >> ~/.bashrc
 source ~/.bashrc
 ```
