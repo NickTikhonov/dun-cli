@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import git from 'simple-git';
 import ora from 'ora';
 import { gpt } from './lib/ai.mjs';

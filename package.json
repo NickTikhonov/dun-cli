@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Quick commits with ai",
   "main": "index.js",
+  "bin": {
+    "dun": "./index.mjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
