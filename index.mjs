@@ -25,8 +25,8 @@ async function performCommit() {
 }
 
 async function generateCommitMessage() {
-    const diff = await git().diff(['--', ':!*.json'])
-    const diffStaged = await git().diff(['--staged', '--', ':!*.json'])
+    const diff = await git().diff(['--', ':!package-lock.json'])
+    const diffStaged = await git().diff(['--staged', '--', ':!package-lock.json'])
     const combined = `${diff}\n${diffStaged}`
     const commitMessage = await gpt(systemPrompt, combined);
     console.log(combined)
