@@ -1,6 +1,6 @@
 # dun
 
-Zero friction git commits powered GPT-3.5 ✨
+Zero friction git commits powered by GPT-3.5 ✨
 
 ![dun](https://github.com/NickTikhonov/dun-cli/assets/6755555/210d4e00-d74b-43df-a42c-a8932cf4133e)
 
