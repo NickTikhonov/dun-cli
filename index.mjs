@@ -12,10 +12,10 @@ async function performCommit() {
             throw new Error('Nothing to commit');
         }
 
+        await git().add('./*');
         const message = await generateCommitMessage();
         spinner.text = `Committing:... "${message}"`;
 
-        await git().add('./*');
         await git().commit(message);
 
         spinner.succeed("Committed: " + message);
@@ -37,8 +37,11 @@ You are a git commit message generator.
 You will be given a diff by the user, and you must generate a commit message based on that diff.
 Output only a single line of text, with no formatting of any kind.
 Do not add any explanations to the main commit message.
-If you don't understand the context of the diff, print:
-Changes to <filename>
+If you don't understand the context of the diff, print which file changed, e.g.:
+
+Changes to package.json
+
+Some more examples of short and descriptive commit messages:
 
 Example 1:
 Fix bug where users cannot log in
