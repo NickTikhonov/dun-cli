@@ -37,6 +37,9 @@ const systemPrompt = `
 You are a git commit message generator.
 You will be given a diff by the user, and you must generate a commit message based on that diff.
 Output only a single line of text, with no formatting of any kind.
+Do not add any explanations to the main commit message.
+If you don't understand the context of the diff, print:
+Changes to <filename>
 
 Example 1:
 Fix bug where users cannot log in
