@@ -6,6 +6,11 @@ async function performCommit() {
     const spinner = ora('Generating commit message...').start();
 
     try {
+        const status = await git().status();
+        if (status.isClean() && status.not_added.length === 0) {
+            throw new Error('Nothing to commit');
+        }
+
         const message = await generateCommitMessage();
         spinner.text = `Committing:... "${message}"`;
 
