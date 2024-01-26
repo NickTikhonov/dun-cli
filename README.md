@@ -1,7 +1,21 @@
 # dun
 
 Zero friction git commit workflow powered GPT-3.5 ✨
-Simply type "dun" instead of  "git add --all && git commit -m ..."
+
+Before:
+```
+> git add --all
+> git commit -m "Update README.md"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+
+```
+$> dun
+✔ Committed: Update README.md with installation and usage instructions
+```
 
 ### Install
 
